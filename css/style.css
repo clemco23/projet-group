@@ -1,10 +1,112 @@
+@charset "UTF-8";
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Chango", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+ul li {
+  color: rgb(16, 26, 89);
+  font-size: 3em;
+}
+
+.description-gif-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.description-gif-container img {
+  border-radius: 95px 87px 69px 69px/98px 41px 41px 31px;
+  transition-duration: 0.5s;
+}
+.description-gif-container img:hover {
+  border-radius: 50px 50px 50px 50px;
+  transition-duration: 0.5 ease;
+}
+.description-gif-container .description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ee8f46;
+  border-radius: 95px 87px 69px 69px/98px 41px 41px 31px;
+  transition-duration: 0.5s;
+  padding: 50px;
+}
+.description-gif-container .description-container h1 {
+  font-size: 4em;
+}
+.description-gif-container .description-container .sous-title {
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.description-container:hover {
+  border-radius: 50px 50px 50px 50px;
+  transition-duration: ease;
+}
+
+.btn-anim {
+  position: relative;
+  display: inline-flex;
+  align-items: center; /* Assure que le contenu du bouton est centré verticalement */
+  justify-content: center;
+  padding: 10px 30px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  background-color: #ee8f46;
+  border: 1px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.btn-anim .arrow {
+  position: absolute;
+  right: -40px;
+  top: 8px;
+  opacity: 0;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-anim:hover {
+  opacity: 0.8;
+}
+
+.btn-anim:hover .arrow {
+  right: 20px;
+  opacity: 1;
+}
+
+.btn-text {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.btn-anim:hover .btn-text {
+  transform: translateX(-18px);
 }/*# sourceMappingURL=style.css.map */
