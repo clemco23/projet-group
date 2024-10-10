@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Chango", sans-serif;
+    font-family: sans-serif;
     font-weight: 200;
     font-style: normal;
       
@@ -13,127 +13,53 @@ a{
     color: inherit;
 }
 
-
 nav {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    // background-color: #f1f1f1;
-    backdrop-filter: blur(10px);
-    padding: 10px;
-    transition: padding 0.3s ease; /* Transition pour lisser les changements */
-    position: fixed; /* Garde la navbar visible pendant le scroll */
-    width: 100%;
-    top: 0;
 }
 
 ul {
-    list-style-type: none; 
-    padding-left: 0;       
-    margin: 0;
     display: flex;
-    justify-content: center;
-    gap: 8px;
-    
-    li{
-        color: rgb(16, 26, 89);
-        font-size: 3em;
-        transition-duration: 0.4;
-    }
-
-    li:hover {
-        transform: scale(0.8);
-        transition-duration: 0.4;
-    }
 }
 
+// .btn-anim {
+//     position: relative;
+//     display: inline-flex;
+//     align-items: center; /* Assure que le contenu du bouton est centré verticalement */
+//     justify-content: center;
+//     padding: 10px 30px;
+//     font-size: 18px;
+//     color: rgb(0, 0, 0);
+//     background-color: #ee8f46;
+//     border: 1px solid black;
+//     border-radius: 50px;
+//     cursor: pointer;
+//     overflow: hidden;
+//     transition: background-color 0.3s ease;
+// }
 
-.description-gif-container{
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+// .btn-anim .arrow {
+//     position: absolute;
+//     right: -40px; 
+//     top: 8px;
+//     opacity: 0;
+//     font-size: 20px;
+//     transition: all 0.3s ease;
+// }
 
-    img{
-        border-radius: 95px 87px 69px 69px / 98px 41px 41px 31px;
-        transition-duration: 0.5s;
-    }
+// .btn-anim:hover {
+//     opacity: 0.8;
+// }
 
-    img:hover {
-        border-radius:  50px 50px 50px 50px;
-        transition-duration: 0.5 ease;
-    }
-    
+// .btn-anim:hover .arrow {
+//     right: 20px;  
+//     opacity: 1;   
+// }
 
-    .description-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #ee8f46;
-        border-radius: 95px 87px 69px 69px / 98px 41px 41px 31px;
-        transition-duration: 0.5s;
-        padding: 50px;
+// .btn-text {
+//     display: inline-block;
+//     transition: transform 0.3s ease;
+// }
 
-        h1{
-            font-size: 4em;
-            
-        }
-
-        .sous-title{
-            font-size: 2em;
-            margin-bottom: 50px;
-        }
-    }
-}
-
-.description-container:hover{
-    border-radius:  50px 50px 50px 50px;
-    transition-duration: ease;
-}
-
-
-
-.btn-anim {
-    position: relative;
-    display: inline-flex;
-    align-items: center; /* Assure que le contenu du bouton est centré verticalement */
-    justify-content: center;
-    padding: 10px 30px;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    background-color: #ee8f46;
-    border: 1px solid black;
-    border-radius: 50px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: background-color 0.3s ease;
-}
-
-.btn-anim .arrow {
-    position: absolute;
-    right: -40px; 
-    top: 8px;
-    opacity: 0;
-    font-size: 20px;
-    transition: all 0.3s ease;
-}
-
-.btn-anim:hover {
-    opacity: 0.8;
-}
-
-.btn-anim:hover .arrow {
-    right: 20px;  
-    opacity: 1;   
-}
-
-.btn-text {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.btn-anim:hover .btn-text {
-    transform: translateX(-18px);
-}
+// .btn-anim:hover .btn-text {
+//     transform: translateX(-18px);
+// }
